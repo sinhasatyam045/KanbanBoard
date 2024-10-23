@@ -1,0 +1,30 @@
+.ticket-card {
+    background: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    /* width: 300px; */
+    height: 100px;
+    gap: 10px;
+  }
+
+  .ticket-priority {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .ticket-priority-tag {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 8px;
+  }
+
+  .ticket-tag {
+    background: #eee;
+    padding: 2px 6px;
+    border-radius: 5px;
+  }

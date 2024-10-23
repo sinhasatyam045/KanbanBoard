@@ -1,0 +1,113 @@
+.kanban-board {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .kanban-controls {
+    display: flex;
+    justify-content: space-between;
+    /* margin-bottom: 20px; */
+    padding: 16px;
+  }
+
+  .kanban-controls {
+    position: relative;
+  }
+  
+  .dropdown {
+    cursor: pointer;
+    display: inline-block;
+  }
+
+  .display-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    border-width: 1px;
+    border-color: gray;
+    border-style: solid;
+    padding: 4px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    z-index: 1;
+    width: 200px;
+    cursor: pointer;
+  }
+
+  .dropdown-item {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .dropdown-item-select {
+    background-color: white;
+    color: black;
+  }
+  
+  .dropdown-content select {
+    margin-bottom: 10px;
+  }
+  
+  
+  
+  .kanban-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: #F4F6FA;
+  }
+  
+  .kanban-column {
+    /* background: #f4f4f4; */
+    padding: 10px;
+    border-radius: 5px;
+    width: 18%;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+  }
+
+  .column-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .column-header-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .add-ticket-button {
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .column-header-buttons {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  
+  .ticket-list {
+    margin-top: 10px;
+  }
+
+
+.ticket-title {
+  font-weight: bold;
+  overflow: hidden;
+  display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}

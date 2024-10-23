@@ -1,0 +1,38 @@
+.kanban-board {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.kanban-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.kanban-columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  background-color: #F4F6FA;
+}
+
+.kanban-column {
+  /* background: #f4f4f4; */
+  padding: 10px;
+  border-radius: 5px;
+  width: 18%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.ticket-list {
+  margin-top: 10px;
+}
+
+.ticket-card {
+  background: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
