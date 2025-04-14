@@ -1,38 +1,114 @@
-.kanban-board {
+/* App.css */
+:root {
+  --primary-color: #4a6cfa;
+  --secondary-color: #f0f4ff;
+  --border-color: #e0e7ff;
+  --text-primary: #1e293b;
+  --text-secondary: #64748b;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  background-color: #f8fafc;
+  color: var(--text-primary);
+  line-height: 1.5;
+}
+
+.app-container {
+  min-height: 100vh;
+  min-width: 100vw;
   display: flex;
   flex-direction: column;
-  gap: 20px;
 }
 
-.kanban-controls {
+.app-header {
+  background-color: white;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.app-nav {
+  margin: 0 auto;
+  padding: 0.75rem 1rem;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
+  align-items: center;
 }
 
-.kanban-columns {
+.app-logo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.app-nav-links {
   display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  background-color: #F4F6FA;
+  gap: 1.5rem;
+  padding-right: 8px;
 }
 
-.kanban-column {
-  /* background: #f4f4f4; */
-  padding: 10px;
-  border-radius: 5px;
-  width: 18%;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+.nav-link {
+  text-decoration: none;
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 0.25rem 0;
+  transition: color 0.2s ease;
 }
 
-.ticket-list {
-  margin-top: 10px;
+.nav-link:hover {
+  color: var(--text-primary);
 }
 
-.ticket-card {
-  background: #fff;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+.nav-link.active {
+  color: var(--primary-color);
+  font-weight: 600;
+  position: relative;
+}
+
+.nav-link.active:after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary-color);
+  border-radius: 2px;
+}
+
+.app-main {
+  flex-grow: 1;
+  margin: 0 auto;
+  width: 100%;
+  /* background-color: #f8fafc; */
+}
+
+@media (max-width: 768px) {
+  .app-nav {
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: flex-start;
+  }
+
+  .app-nav-links {
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .app-main {
+    width: 100vw;
+  }
 }
